@@ -1,0 +1,94 @@
+.chairs {
+    padding-top: 30px;
+    margin: 0 auto;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.photo_cointainer_1 {
+    position: relative;
+    width: 328px;
+    height: 230px;
+    margin: 0 5px 0 5px;
+}
+
+.photo_container_2 {
+    position: relative;
+    width: 328px;
+    height: 230px;
+    margin: 0 5px 0 5px;
+}
+
+.hidden-pool-description {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 329px;
+    height: 70px;
+    background: rgba(240, 240, 240, 0.5);
+    padding-top: 10px;
+    padding-left: 10px;
+
+    p {
+        font-size: 15px;
+        display: block;
+        border-bottom: 5px solid lightseagreen;
+        width: 45%;
+        font-weight: 600;
+    }
+
+}
+
+.suggested-pool-description {
+    border: 1px solid lightgray;
+    padding: 30px 20px 30px 20px;
+    width: 380px;
+
+    h1 {
+        font-size: 15px;
+        display: block;
+        border-bottom: 5px solid lightseagreen;
+        width: 40%;
+    }
+
+    p {
+        padding: 15px 0 10px 0;
+        color: gray;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 1070px) {
+    .chairs {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .suggested-pool-description {
+            width: 656px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .chairs {
+        .suggested-pool-description {
+            width: 328px;
+        }
+
+        .photo_cointainer_1 {
+            margin-bottom: 15px;
+        }
+
+        .photo_container_2 {
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.row .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerSitOnChair {
+    background: #222;
+    height: 41px;
+}
+
+.logoSitOnChair {
+    color: #fff;
+    height: 41px;
+    padding-top: 12px;
+    padding-left: 63px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.logoSitOnChair>.logo__link>span {
+    color: #24BA9F;
+    font-weight: 400;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 41px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 50px;
+
+}
+
+
+.nav-list__link,
+.logo__link {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-list.dropdown {
+    display: none;
+    position: absolute;
+    background: black;
+    left: -10px;
+    top: 35px;
+    color: white;
+    text-transform: none;
+}
+
+.nav-list__subitem a {
+    padding: 10px;
+    background: black;
+}
+
+.nav-list__item.drop {
+    position: relative;
+}
+
+.nav-list__item.drop:hover .nav-list.dropdown {
+    display: block;
+}
+
+.menu-triangle {
+    width: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 10px solid transparent;
+    border-bottom-color: black;
+    position: absolute;
+    left: 30px;
+    top: -18px;
+}
+
+.page-nav-toggle {
+    width: 55px;
+    height: 37px;
+    border: none;
+    background: rgba(#fff, 0.8);
+    border-radius: 6px;
+    position: fixed;
+    top: 2px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+
+}
+
+.page-nav-toggle strong {
+    position: absolute;
+    left: -99999px;
+}
+
+.page-nav-toggle span {
+    width: 26px;
+    height: 6px;
+    background: #fff;
+    display: block;
+    margin: 3px auto;
+}
+
+
+@media (max-width: 860px) {
+    .nav-list {
+        display: none;
+    }
+
+    .headerSitOnChair .header {
+        display: flex;
+        text-align: center;
+        align-content: center;
+        padding-left: 70px;
+    }
+
+    .logoSitOnChair {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .page-nav-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .responsive_small .logoSitOnChair {
+        padding: 12px 0 0 0;
+        margin: 0;
+    }
+}

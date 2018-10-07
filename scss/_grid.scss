@@ -1,0 +1,27 @@
+$gap: 0px; //odstep miedzy kolumnami
+$columns: 12; //liczba kolumn
+
+.container {
+    padding-left: $gap;
+    padding-right: $gap;
+    width: 100%;
+
+    .row {
+        margin-left: -$gap;
+        margin-right: -$gap;
+        display: flex;
+
+        [class*="col-"] {
+            padding-left: $gap;
+            padding-right: $gap;
+            box-sizing: border-box;
+            margin-bottom: 2*$gap;
+        }
+
+        @for $i from 1 through $columns {
+            .col-#{$i}-#{$columns} {
+                width: (100/ $columns * $i) * 1%;
+            }
+        }
+    }
+}
