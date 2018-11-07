@@ -7,5 +7,5 @@ This is the remake of my first landing page. I have upgraded it with Resposive W
 ## Technologies
 - HTML5
 - SASS
-- Vanilla JavaScrip
+- Vanilla JavaScript
 - Gulp
