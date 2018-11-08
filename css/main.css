@@ -1186,8 +1186,8 @@ li.visible {
   text-align: center;
   font-weight: bold;
   color: #444;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .mobile-page-nav-list a:hover {
@@ -1203,10 +1203,9 @@ li.visible {
     transition: 0.5s;
   }
   .mobile-page-nav-list .nav-list.dropdown {
-    left: 0;
-    top: 58px;
+    left: 300px;
+    top: 0px;
     width: 300px;
-    background: #444;
     color: #fff;
   }
   .mobile-page-nav-list .menu-triangle {

@@ -23,12 +23,13 @@
     text-align: center;
     font-weight: bold;
     color: #444;
-    transition: 0.2s;
+    transition: 0.3s;
 
     &:hover {
         background: #444;
         color: #fff;
     }
+
 }
 
 @media (max-width: 980px) {
@@ -38,11 +39,11 @@
         transition: 0.5s;
 
         .nav-list.dropdown {
-            left: 0;
-            top: 58px;
+            left: 300px;
+            top: 0px;
             width: 300px;
-            background: #444;
             color: #fff;
+
         }
 
         .menu-triangle {

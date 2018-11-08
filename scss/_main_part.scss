@@ -143,9 +143,15 @@ li.visible {
 @media (max-width: 860px) {
     .main__chair__image {}
 
+    .container .row {
+    }
+
+
 
     @media (max-width: 720px) {
         .main__chair__image {}
+
+
 
         .arrow--left,
         .arrow--right {
